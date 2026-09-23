@@ -1,0 +1,25 @@
+{
+  "months": [
+    "2026-01",
+    "2026-02",
+    "2026-03"
+  ],
+  "total_rows": 11077206,
+  "columns": 20,
+  "visualization_sample_rows": 450000,
+  "baseline": {
+    "train_months": [
+      "2026-01",
+      "2026-02"
+    ],
+    "validation_month": "2026-03",
+    "duration_filter_min": 1,
+    "duration_filter_max": 180,
+    "train_rows": 6964120,
+    "validation_rows": 3862080,
+    "train_median_minutes": 13.95,
+    "MAE_minutes": 9.175108076476924,
+    "RMSE_minutes": 14.789322971531249,
+    "R2": -0.05769466120701883
+  }
+}
