@@ -1,0 +1,38 @@
+{
+  "train_months": [
+    "2026-01",
+    "2026-02"
+  ],
+  "validation_months": [
+    "2026-03"
+  ],
+  "train_rows": 6964100,
+  "validation_rows": 3862063,
+  "best_linear": "Ridge + hora x finde (one-hot)",
+  "models": {
+    "Baseline mediana": {
+      "MAE_minutes": 9.175125379881168,
+      "RMSE_minutes": 14.789349461494142,
+      "R2": -0.05769515655400559,
+      "fit_seconds": 0.0
+    },
+    "LinearRegression": {
+      "MAE_minutes": 4.7896932738861135,
+      "RMSE_minutes": 7.89290988056956,
+      "R2": 0.698743336615494,
+      "fit_seconds": 3.5
+    },
+    "Ridge(alpha=10)": {
+      "MAE_minutes": 4.789691306052682,
+      "RMSE_minutes": 7.892905094313823,
+      "R2": 0.698743701979097,
+      "fit_seconds": 2.6
+    },
+    "Ridge + hora x finde (one-hot)": {
+      "MAE_minutes": 4.713099133472151,
+      "RMSE_minutes": 7.784879895191986,
+      "R2": 0.7069334804214531,
+      "fit_seconds": 12.2
+    }
+  }
+}

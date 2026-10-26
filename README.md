@@ -21,10 +21,14 @@ proyecto-final-nyc-taxi/
 ├── data/
 │   ├── README.md
 ├── notebooks/
-│   └── 01_exploracion_inicial.ipynb
+│   ├── 01_exploracion_inicial.ipynb
+│   ├── 02_limpieza_features.ipynb
+│   └── 03_modelos.ipynb
 ├── src/
 │   ├── data.py
-│   └── features.py
+│   ├── features.py
+│   ├── train.py
+│   └── evaluate.py
 ├── outputs/
 └── reports/
     └── figures/

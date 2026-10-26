@@ -1,0 +1,53 @@
+{
+  "train_rows": 6964100,
+  "val_rows": 3862063,
+  "features": [
+    "pickup_hour",
+    "pickup_dayofweek",
+    "pickup_is_weekend",
+    "passenger_count",
+    "passenger_missing",
+    "vendor_id",
+    "same_zone",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "pu_zone_mean",
+    "do_zone_mean",
+    "pair_mean"
+  ],
+  "val_pair_coverage": 0.9989655787593315,
+  "quality": [
+    {
+      "month": "2026-01",
+      "raw": 3724889,
+      "clean": 3639382,
+      "dur_lt_1": 83747,
+      "dur_gt_180": 1755,
+      "wrong_month": 7,
+      "passenger_nan": 1088058,
+      "dropped_pct": 2.295558337443071
+    },
+    {
+      "month": "2026-02",
+      "raw": 3399866,
+      "clean": 3324718,
+      "dur_lt_1": 73605,
+      "dur_gt_180": 1528,
+      "wrong_month": 16,
+      "passenger_nan": 1023317,
+      "dropped_pct": 2.210322406824272
+    },
+    {
+      "month": "2026-03",
+      "raw": 3952451,
+      "clean": 3862063,
+      "dur_lt_1": 89190,
+      "dur_gt_180": 1181,
+      "wrong_month": 19,
+      "passenger_nan": 945748,
+      "dropped_pct": 2.286884770994002
+    }
+  ]
+}

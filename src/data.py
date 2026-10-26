@@ -46,3 +46,40 @@ def download_yellow_taxi_months(months=DEFAULT_MONTHS, data_dir="data"):
 def load_month(path, columns=None):
     """Carga un archivo Parquet mensual con pandas."""
     return pd.read_parquet(path, columns=columns)
+
+
+# Columnas mínimas necesarias: solo información disponible al inicio del viaje
+# más el instante de bajada, que se usa únicamente para derivar el objetivo.
+MODEL_COLUMNS = [
+    "VendorID",
+    "tpep_pickup_datetime",
+    "tpep_dropoff_datetime",
+    "passenger_count",
+    "PULocationID",
+    "DOLocationID",
+]
+
+
+def load_clean_month(path, month=None, min_minutes=1, max_minutes=180):
+    """Carga un mes, deriva `duration_min` y aplica las reglas de calidad.
+
+    Reglas (las mismas del baseline de la semana 8):
+    - duración entre `min_minutes` y `max_minutes`;
+    - fecha de recogida dentro del mes esperado (si se indica `month`);
+    - zonas de recogida y destino no nulas.
+    """
+    from src.features import add_duration, valid_duration_mask
+
+    df = add_duration(load_month(path, columns=MODEL_COLUMNS))
+    mask = valid_duration_mask(df, min_minutes, max_minutes)
+    mask &= df["PULocationID"].notna() & df["DOLocationID"].notna()
+    if month is not None:
+        mask &= df["tpep_pickup_datetime"].dt.strftime("%Y-%m") == month
+    return df.loc[mask].reset_index(drop=True)
+
+
+def load_clean_months(months, data_dir="data", **kwargs):
+    """Concatena varios meses ya limpios (descarga los que falten)."""
+    paths = download_yellow_taxi_months(months, data_dir)
+    parts = [load_clean_month(paths[m], month=m, **kwargs) for m in months]
+    return pd.concat(parts, ignore_index=True)
