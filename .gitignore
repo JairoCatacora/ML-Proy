@@ -1,0 +1,23 @@
+# Datos pesados
+data/*.parquet
+data/*.part
+
+# Entornos
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Outputs temporales
+*.log
