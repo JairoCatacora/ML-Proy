@@ -1,0 +1,14 @@
+familia,parametros,MAE_val
+DecisionTree,"{'max_depth': 16, 'min_samples_leaf': 80}",4.373552561270961
+DecisionTree,"{'max_depth': 16, 'min_samples_leaf': 20}",4.37657622453762
+DecisionTree,"{'max_depth': 12, 'min_samples_leaf': 20}",4.406254799837271
+DecisionTree,"{'max_depth': 12, 'min_samples_leaf': 80}",4.4140006087797525
+DecisionTree,"{'max_depth': 8, 'min_samples_leaf': 20}",4.60422151066483
+DecisionTree,"{'max_depth': 8, 'min_samples_leaf': 80}",4.604281275485315
+HistGradientBoosting,"{'max_iter': 150, 'max_leaf_nodes': 31}",4.28233907049257
+HistGradientBoosting,"{'max_iter': 80, 'max_leaf_nodes': 31}",4.331407405294286
+HistGradientBoosting,"{'max_iter': 150, 'max_leaf_nodes': 15}",4.339687960057059
+HistGradientBoosting,"{'max_iter': 80, 'max_leaf_nodes': 15}",4.403672618859346
+Ridge,{'alpha': 100.0},4.96825252732118
+Ridge,{'alpha': 10.0},4.968337152441342
+Ridge,{'alpha': 1.0},4.968345632933299

@@ -1,0 +1,268 @@
+{
+  "peores_hora_dia": [
+    {
+      "pickup_hour": 15,
+      "pickup_dayofweek": 4,
+      "n": 1772,
+      "MAE": 5.933708096382653,
+      "bias": 0.06481467777125581
+    },
+    {
+      "pickup_hour": 14,
+      "pickup_dayofweek": 4,
+      "n": 1814,
+      "MAE": 5.686656919149924,
+      "bias": 0.6708485360365743
+    },
+    {
+      "pickup_hour": 15,
+      "pickup_dayofweek": 3,
+      "n": 2072,
+      "MAE": 5.452146161887389,
+      "bias": 0.4316474030642049
+    },
+    {
+      "pickup_hour": 14,
+      "pickup_dayofweek": 5,
+      "n": 1439,
+      "MAE": 5.397697447452676,
+      "bias": 1.0259492456910322
+    },
+    {
+      "pickup_hour": 17,
+      "pickup_dayofweek": 3,
+      "n": 2558,
+      "MAE": 5.390925824451481,
+      "bias": -0.669370303147266
+    },
+    {
+      "pickup_hour": 16,
+      "pickup_dayofweek": 4,
+      "n": 1822,
+      "MAE": 5.376798512755426,
+      "bias": 0.522997850520331
+    },
+    {
+      "pickup_hour": 16,
+      "pickup_dayofweek": 3,
+      "n": 2198,
+      "MAE": 5.340057670001722,
+      "bias": -0.016727333642935223
+    },
+    {
+      "pickup_hour": 13,
+      "pickup_dayofweek": 4,
+      "n": 1626,
+      "MAE": 5.276645562937694,
+      "bias": 0.834087556969014
+    },
+    {
+      "pickup_hour": 17,
+      "pickup_dayofweek": 4,
+      "n": 2174,
+      "MAE": 5.214307411357086,
+      "bias": 0.8044894812326387
+    },
+    {
+      "pickup_hour": 14,
+      "pickup_dayofweek": 3,
+      "n": 1971,
+      "MAE": 5.150633299834305,
+      "bias": 0.39794745699263645
+    }
+  ],
+  "peores_pares_zona": [
+    {
+      "PULocationID": 132,
+      "DOLocationID": 265,
+      "n": 459,
+      "MAE": 21.18369897469189,
+      "bias": -3.9978865727893047
+    },
+    {
+      "PULocationID": 138,
+      "DOLocationID": 265,
+      "n": 84,
+      "MAE": 11.522314139558294,
+      "bias": 1.400962823619732
+    },
+    {
+      "PULocationID": 164,
+      "DOLocationID": 132,
+      "n": 54,
+      "MAE": 10.495172444451889,
+      "bias": 4.298244404755984
+    },
+    {
+      "PULocationID": 132,
+      "DOLocationID": 100,
+      "n": 92,
+      "MAE": 9.501044652657658,
+      "bias": 2.335679064413502
+    },
+    {
+      "PULocationID": 170,
+      "DOLocationID": 132,
+      "n": 50,
+      "MAE": 9.441654277659405,
+      "bias": 7.3479749957147895
+    },
+    {
+      "PULocationID": 132,
+      "DOLocationID": 230,
+      "n": 364,
+      "MAE": 9.254809593699411,
+      "bias": -0.7635576364590522
+    },
+    {
+      "PULocationID": 230,
+      "DOLocationID": 132,
+      "n": 110,
+      "MAE": 9.239614893016673,
+      "bias": 4.476435883098689
+    },
+    {
+      "PULocationID": 132,
+      "DOLocationID": 163,
+      "n": 132,
+      "MAE": 9.157117902351889,
+      "bias": 0.370404307590909
+    },
+    {
+      "PULocationID": 162,
+      "DOLocationID": 132,
+      "n": 59,
+      "MAE": 9.099027675587234,
+      "bias": 4.904608860031958
+    },
+    {
+      "PULocationID": 170,
+      "DOLocationID": 138,
+      "n": 58,
+      "MAE": 8.802959122293771,
+      "bias": 4.722882297272778
+    }
+  ],
+  "casos_extremos": [
+    {
+      "pickup_hour": 15,
+      "pickup_dayofweek": 5,
+      "pickup_is_weekend": 1,
+      "PULocationID": 138,
+      "DOLocationID": 138,
+      "duration_min": 160.53333333333333,
+      "pred": 13.63117561320304,
+      "abs_error": 146.9021577201303,
+      "signed_error": -146.9021577201303,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 10,
+      "pickup_dayofweek": 1,
+      "pickup_is_weekend": 0,
+      "PULocationID": 211,
+      "DOLocationID": 211,
+      "duration_min": 154.43333333333334,
+      "pred": 8.635166724920724,
+      "abs_error": 145.7981666084126,
+      "signed_error": -145.7981666084126,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 9,
+      "pickup_dayofweek": 4,
+      "pickup_is_weekend": 0,
+      "PULocationID": 132,
+      "DOLocationID": 265,
+      "duration_min": 178.08333333333334,
+      "pred": 41.433513901920065,
+      "abs_error": 136.64981943141328,
+      "signed_error": -136.64981943141328,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 10,
+      "pickup_dayofweek": 6,
+      "pickup_is_weekend": 1,
+      "PULocationID": 132,
+      "DOLocationID": 138,
+      "duration_min": 154.56666666666666,
+      "pred": 20.976409803484078,
+      "abs_error": 133.5902568631826,
+      "signed_error": -133.5902568631826,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 11,
+      "pickup_dayofweek": 6,
+      "pickup_is_weekend": 1,
+      "PULocationID": 26,
+      "DOLocationID": 265,
+      "duration_min": 158.9,
+      "pred": 30.34466512735408,
+      "abs_error": 128.55533487264591,
+      "signed_error": -128.55533487264591,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 21,
+      "pickup_dayofweek": 1,
+      "pickup_is_weekend": 0,
+      "PULocationID": 90,
+      "DOLocationID": 90,
+      "duration_min": 130.88333333333333,
+      "pred": 4.6367850821642795,
+      "abs_error": 126.24654825116905,
+      "signed_error": -126.24654825116905,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 18,
+      "pickup_dayofweek": 3,
+      "pickup_is_weekend": 0,
+      "PULocationID": 132,
+      "DOLocationID": 157,
+      "duration_min": 151.8,
+      "pred": 26.23507835589451,
+      "abs_error": 125.5649216441055,
+      "signed_error": -125.5649216441055,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 14,
+      "pickup_dayofweek": 4,
+      "pickup_is_weekend": 0,
+      "PULocationID": 132,
+      "DOLocationID": 265,
+      "duration_min": 177.9,
+      "pred": 52.43305539590837,
+      "abs_error": 125.46694460409164,
+      "signed_error": -125.46694460409164,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 3,
+      "pickup_dayofweek": 2,
+      "pickup_is_weekend": 0,
+      "PULocationID": 132,
+      "DOLocationID": 265,
+      "duration_min": 154.56666666666666,
+      "pred": 30.115123832964127,
+      "abs_error": 124.45154283370253,
+      "signed_error": -124.45154283370253,
+      "duration_bucket": "40-180"
+    },
+    {
+      "pickup_hour": 19,
+      "pickup_dayofweek": 6,
+      "pickup_is_weekend": 1,
+      "PULocationID": 163,
+      "DOLocationID": 77,
+      "duration_min": 166.78333333333333,
+      "pred": 44.35833980917662,
+      "abs_error": 122.42499352415672,
+      "signed_error": -122.42499352415672,
+      "duration_bucket": "40-180"
+    }
+  ]
+}

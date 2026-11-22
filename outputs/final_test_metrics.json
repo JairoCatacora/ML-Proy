@@ -1,0 +1,18 @@
+{
+  "best_family": "HistGradientBoosting",
+  "best_params": {
+    "max_iter": 150,
+    "max_leaf_nodes": 31
+  },
+  "test_metrics": {
+    "MAE_minutes": 4.201625834188662,
+    "RMSE_minutes": 6.400430930421298,
+    "R2": 0.7294544856736174
+  },
+  "baseline_test_metrics": {
+    "MAE_minutes": 8.626457,
+    "RMSE_minutes": 12.728779048108093,
+    "R2": -0.07002864201910497
+  },
+  "test_rows": 200000
+}
