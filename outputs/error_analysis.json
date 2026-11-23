@@ -1,0 +1,9 @@
+{
+  "MAE_global": 4.201625834188662,
+  "bias_global": 0.2903679653733203,
+  "worst_hour": 15,
+  "worst_dow": 4,
+  "worst_duration_bucket": "40-180",
+  "worst_pu_zone": 6,
+  "worst_do_zone": 44
+}

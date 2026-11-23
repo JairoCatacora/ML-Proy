@@ -23,7 +23,8 @@ proyecto-final-nyc-taxi/
 ├── notebooks/
 │   ├── 01_exploracion_inicial.ipynb
 │   ├── 02_limpieza_features.ipynb
-│   └── 03_modelos.ipynb
+│   ├── 03_modelos.ipynb
+│   └── 04_analisis_errores.ipynb
 ├── src/
 │   ├── data.py
 │   ├── features.py
@@ -31,6 +32,7 @@ proyecto-final-nyc-taxi/
 │   └── evaluate.py
 ├── outputs/
 └── reports/
+    ├── avance_semana13_14.md
     └── figures/
 ```
 
@@ -139,3 +141,16 @@ RANDOM_STATE = 42
 Las visualizaciones utilizan una muestra reproducible para evitar que la representación gráfica de millones de registros sea innecesariamente lenta.
 
 El baseline se evalúa con datos de un período posterior al entrenamiento.
+
+## Evaluación final (semanas 13 y 14)
+
+`notebooks/04_analisis_errores.ipynb` ejecuta la parte final del proyecto: búsqueda de hiperparámetros con validación en junio, evaluación del modelo congelado sobre el test de julio, análisis de errores por hora/día/zona/duración, interpretabilidad y discusión de riesgos éticos y limitaciones. El detalle está en `reports/avance_semana13_14.md`.
+
+Para reproducirlo desde cero:
+
+```bash
+python3 -m nbconvert --to notebook --execute --inplace \
+  --ExecutePreprocessor.timeout=1200 notebooks/04_analisis_errores.ipynb
+```
+
+Por defecto se usa una muestra reproducible de 200 000 filas por mes. Para entrenar con todos los registros, cambiar `MAX_ROWS_PER_MONTH = None` en la primera celda (requiere más memoria y tiempo).

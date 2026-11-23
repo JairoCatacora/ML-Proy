@@ -1,0 +1,15 @@
+,coef_estandarizado
+num__hour_cos,-2.0621955
+num__dow_cos,-1.0801117
+num__hour_sin,-1.0325997
+num__vendor_id,-0.9002424
+num__pickup_dayofweek,-0.7534332
+num__pu_zone_mean,-0.7122691
+num__pickup_hour,-0.23990387
+num__passenger_missing,-0.0742459
+num__passenger_count,-0.07250847
+num__same_zone,-0.026731445
+num__do_zone_mean,0.00874782
+num__pickup_is_weekend,0.38796332
+num__dow_sin,0.50459427
+num__pair_mean,11.854114

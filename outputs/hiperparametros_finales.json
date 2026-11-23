@@ -1,0 +1,25 @@
+[
+  {
+    "familia": "Ridge",
+    "parametros": {
+      "alpha": 100.0
+    },
+    "MAE_val": 4.96825252732118
+  },
+  {
+    "familia": "DecisionTree",
+    "parametros": {
+      "max_depth": 16,
+      "min_samples_leaf": 80
+    },
+    "MAE_val": 4.373552561270961
+  },
+  {
+    "familia": "HistGradientBoosting",
+    "parametros": {
+      "max_iter": 150,
+      "max_leaf_nodes": 31
+    },
+    "MAE_val": 4.28233907049257
+  }
+]
