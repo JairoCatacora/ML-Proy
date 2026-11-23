@@ -110,6 +110,24 @@ El notebook genera automáticamente:
 11. interpretación escrita debajo de cada resultado y cada visualización;
 12. archivos de resumen en `outputs/` (`eda_summary.json`, `baseline_metrics.json`).
 
+## Limpieza, features y modelos (semanas 9 a 12)
+
+Ejecutar en orden, desde la raíz del repositorio:
+
+```bash
+jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=3600 notebooks/02_limpieza_features.ipynb
+jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=3600 notebooks/03_modelos.ipynb
+```
+
+- `02_limpieza_features.ipynb` (semana 9): reglas de limpieza, faltantes, variables temporales y codificación de zonas (`src/data.py`, `src/features.py`).
+- `03_modelos.ipynb`:
+  - semana 10: familia lineal con todos los registros → `outputs/linear_metrics.json`;
+  - semana 11: árbol, Random Forest y HistGradientBoosting sobre una muestra de 200 000 viajes/mes → `outputs/modelos_sem11_12.json`;
+  - semana 12: búsqueda de hiperparámetros (ene → feb) y confirmación en marzo → `outputs/busqueda_hiperparametros_sem12.csv`.
+- Resumen de resultados: `reports/avance_semana11_12.md`.
+
+Julio 2026 (test final) no se usa en estos notebooks. La sección de la semana 10 carga ~11 M de filas: se recomiendan unos 16 GB de RAM. Versiones probadas: Python 3.15, pandas 3.1.1, scikit-learn 1.9.1, numpy 2.5.5, pyarrow 26.0.1.
+
 ## Reproducibilidad
 
 Se utiliza:
