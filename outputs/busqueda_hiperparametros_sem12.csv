@@ -1,0 +1,18 @@
+familia,parametros,MAE_feb,fit_seconds
+DecisionTree,"{'max_depth': 12, 'min_samples_leaf': 20}",4.99828139888095,0.6
+DecisionTree,"{'max_depth': 16, 'min_samples_leaf': 20}",5.026139286450361,0.9
+DecisionTree,"{'max_depth': 16, 'min_samples_leaf': 80}",5.03164059572724,0.7
+DecisionTree,"{'max_depth': 12, 'min_samples_leaf': 80}",5.036694516241058,0.7
+DecisionTree,"{'max_depth': 8, 'min_samples_leaf': 20}",5.201588548881682,0.5
+DecisionTree,"{'max_depth': 8, 'min_samples_leaf': 80}",5.208760974728482,0.5
+HistGradientBoosting,"{'max_iter': 150, 'max_leaf_nodes': 31}",4.734075035240202,1.0
+HistGradientBoosting,"{'max_iter': 80, 'max_leaf_nodes': 31}",4.79079205966998,0.7
+HistGradientBoosting,"{'max_iter': 150, 'max_leaf_nodes': 15}",4.8042952407507435,0.8
+HistGradientBoosting,"{'max_iter': 80, 'max_leaf_nodes': 15}",4.886913605698975,0.6
+RandomForest,"{'max_depth': 16, 'min_samples_leaf': 20, 'n_estimators': 60}",4.785220853348354,4.5
+RandomForest,"{'max_depth': 12, 'min_samples_leaf': 20, 'n_estimators': 60}",4.828622496163391,4.6
+RandomForest,"{'max_depth': 16, 'min_samples_leaf': 80, 'n_estimators': 60}",4.908545192915128,3.5
+RandomForest,"{'max_depth': 12, 'min_samples_leaf': 80, 'n_estimators': 60}",4.920423335321371,4.9
+Ridge,{'alpha': 100.0},5.684536962500572,0.2
+Ridge,{'alpha': 10.0},5.685017084921837,0.2
+Ridge,{'alpha': 1.0},5.685065826412519,0.2

@@ -78,8 +78,19 @@ def load_clean_month(path, month=None, min_minutes=1, max_minutes=180):
     return df.loc[mask].reset_index(drop=True)
 
 
-def load_clean_months(months, data_dir="data", **kwargs):
-    """Concatena varios meses ya limpios (descarga los que falten)."""
+def load_clean_months(months, data_dir="data", max_rows_per_month=None, seed=42, **kwargs):
+    """Concatena varios meses ya limpios (descarga los que falten).
+
+    Si `max_rows_per_month` se indica, se toma una muestra reproducible de
+    cada mes antes de concatenar. Esto controla el costo computacional sin
+    cambiar las reglas de limpieza. Usar `None` para trabajar con todos los
+    registros (recomendado cuando haya memoria suficiente).
+    """
     paths = download_yellow_taxi_months(months, data_dir)
-    parts = [load_clean_month(paths[m], month=m, **kwargs) for m in months]
+    parts = []
+    for month in months:
+        df = load_clean_month(paths[month], month=month, **kwargs)
+        if max_rows_per_month is not None and len(df) > max_rows_per_month:
+            df = df.sample(n=max_rows_per_month, random_state=seed)
+        parts.append(df.reset_index(drop=True))
     return pd.concat(parts, ignore_index=True)
